@@ -1,6 +1,7 @@
 {
   "name": "rekognizerbot",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "repository": "https://github.com/emilioschepis/rekognizerbot",
   "author": "Emilio Schepis",
   "description": "Serverless Telegram Bot",
   "main": "handler.ts",
