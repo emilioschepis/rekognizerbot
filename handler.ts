@@ -150,7 +150,23 @@ const handlePhoto = async (context: ContextMessageUpdate): Promise<Message> => {
   }
 };
 
+const handleStart = async (context: ContextMessageUpdate): Promise<Message> => {
+  const reply = `Hi! I'm the Rekognizer bot.\n` + `Send me a screenshot to analyze and I will parse URLs and handles.`;
+
+  return context.reply(reply);
+};
+
+const handleAbout = async (context: ContextMessageUpdate): Promise<Message> => {
+  const reply =
+    `This bot was created by [Emilio Schepis](https://emilioschepis.com/).\n` +
+    `The source code can be found [on GitHub](https://github.com/emilioschepis/rekognizerbot).`;
+
+  return context.replyWithMarkdown(reply);
+};
+
 bot.on('photo', handlePhoto);
+bot.command('start', handleStart);
+bot.command('about', handleAbout);
 
 export const handleUpdate: APIGatewayProxyHandler = async (event, _context) => {
   const update = JSON.parse(event.body) as Update;
