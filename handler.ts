@@ -168,7 +168,7 @@ bot.on('photo', handlePhoto);
 bot.command('start', handleStart);
 bot.command('about', handleAbout);
 
-export const handleUpdate: APIGatewayProxyHandler = async (event, _context) => {
+export const handleUpdate: APIGatewayProxyHandler = async event => {
   const update = JSON.parse(event.body) as Update;
   await bot.handleUpdate(update);
 
