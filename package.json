@@ -8,7 +8,8 @@
   "scripts": {
     "deploy": "serverless deploy",
     "deploy:bot": "serverless deploy -f bot",
-    "test": "jest"
+    "test": "jest",
+    "lint": "./node_modules/.bin/eslint . --ext .ts,.tsx"
   },
   "jest": {
     "moduleNameMapper": {
