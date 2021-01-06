@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-rekognition-node": "0.1.0-preview.6",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "source-map-support": "^0.5.10",
     "telegraf": "^3.37.0"
   },
