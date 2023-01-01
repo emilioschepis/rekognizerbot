@@ -40,9 +40,9 @@
     "jest": "^25.2.4",
     "prettier": "^1.19.1",
     "serverless-webpack": "^5.3.1",
-    "ts-loader": "^5.3.3",
+    "ts-loader": "^9.4.2",
     "typescript": "^3.8.3",
-    "webpack": "^4.42.1",
+    "webpack": "^5.75.0",
     "webpack-node-externals": "^1.7.2"
   },
   "license": "MIT"
